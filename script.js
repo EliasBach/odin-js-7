@@ -1,7 +1,7 @@
-function Node(value = null, nextNode = null) {
+function Node(value = null, next = null) {
     return {
       value,
-      nextNode
+      next
     }
 }
 
@@ -17,7 +17,7 @@ function LinkedList() {
                 head = newNode;
                 tail = newNode;
             } else {
-                tail.nextNode = newNode;
+                tail.next = newNode;
                 tail = newNode;
             }
         },
